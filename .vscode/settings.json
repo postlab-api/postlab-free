@@ -1,0 +1,64 @@
+{
+  // "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "vetur.validation.template": false,
+  "editor.rename.enablePreview": false,
+  "workbench.editor.enablePreview": false,
+  "emmet.includeLanguages": {
+    "html": "html",
+    "javascript": "javascriptreact"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true // 保存的时候自动格式化
+},
+  "prettier.configPath": ".prettierrc",
+  "prettier.prettierPath": "./node_modules/prettier",
+   "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/bundle": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/src-tauri/target": true,
+    "**/Cargo.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/.yaml": true
+  }
+}

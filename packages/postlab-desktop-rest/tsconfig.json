@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "paths": {
+      "@platform/*": ["./src/platform/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@postlab/services/*":["../postlab-services/src/*"],
+      "@postlab/helpers/*":["../postlab-helpers/src/*"],
+      "@postlab/platform/*":["../postlab-platform/src/platform/*"],
+      "@postlab/store/*":["../postlab-di-ioc/src/store/*"],
+      "@postlab/service/*":["../postlab-di-ioc/src/service/*"],
+    }
+
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
