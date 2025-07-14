@@ -14,6 +14,7 @@
     "gql-codegen": "graphql-codegen --require dotenv/config --config gql-codegen.yml dotenv_config_path=\"../../.env\""
   },
   "dependencies": {
+    "@postlab/codemirror-input": "0.0.1",
     "@fontsource-variable/inter": "5.0.15",
     "@fontsource-variable/material-symbols-rounded": "5.0.16",
     "@fontsource-variable/roboto-mono": "5.0.16",

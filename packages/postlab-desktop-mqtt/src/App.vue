@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onBeforeMount } from 'vue'
 import { theme, message } from 'ant-design-vue'
-import { CompactModule } from '@postlab/component-rest'
+import { MqttModule } from '@postlab/component-mqtt'
 import { InputModule } from '@postlab/codemirror-input'
 import { invoke } from '@tauri-apps/api/core'
 
@@ -23,7 +23,7 @@ const handleChangeKey = (v: string) => console.log('handleChangeKey', v)
       },
     }"
   >
-    <CompactModule />
+    <MqttModule />
     <!-- <InputModule
       class="codemirror-input"
       :modelValue="name"
