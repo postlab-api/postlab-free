@@ -23,7 +23,7 @@ const handleChangeKey = (v: string) => console.log('handleChangeKey', v)
       },
     }"
   >
-    <MqttModule />
+    <MqttModule  />
     <!-- <InputModule
       class="codemirror-input"
       :modelValue="name"
