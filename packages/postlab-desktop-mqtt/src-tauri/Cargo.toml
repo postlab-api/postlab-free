@@ -29,6 +29,7 @@ hex_color = "3.0.0"
 windows = "0.61.3"
 windows-sys = "0.60.2"
 winver = "1.0.0"
+tokio-util = "0.7.15"
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt"] }

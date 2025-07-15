@@ -3821,6 +3821,7 @@ dependencies = [
  "tauri-plugin-opener",
  "thiserror 2.0.12",
  "tokio",
+ "tokio-util",
  "windows 0.61.3",
  "windows-sys 0.60.2",
  "winver",

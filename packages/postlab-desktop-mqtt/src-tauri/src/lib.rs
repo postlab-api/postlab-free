@@ -1,3 +1,6 @@
+// Prevents additional console window on Windows in release, DO NOT REMOVE!!
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 #[tauri::command]
 
@@ -20,7 +23,6 @@ mod interop;
 
 use tauri::Emitter;
 // use tauri::Manager;
-use tauri_plugin_store;
 
 
 fn greet(name: &str) -> String {
@@ -34,7 +36,7 @@ pub fn run() {
     //     .invoke_handler(tauri::generate_handler![greet])
     //     .run(tauri::generate_context!())
     //     .expect("error while running tauri application");
-    
+
     tauri_plugin_deep_link::prepare("io.hoppscotch.desktop");
 
     tauri::Builder::default()

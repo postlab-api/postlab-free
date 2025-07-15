@@ -93,10 +93,10 @@ pub fn setup_win_window(app: &mut App) {
         // Reacquire the window handle inside the closure
         if let Some(window) = window.app_handle().get_webview_window(&window_label) {
             if let Ok(hwnd) = window.hwnd() {
-                update_bg_color(&HWND(hwnd.0 as isize), color);
+                update_bg_color(&HWND(hwnd.0), color);
             }
         }
     });
 
-    update_bg_color(&HWND(win_handle.0 as isize), HexColor::rgb(23, 23, 23));
+    update_bg_color(&HWND(win_handle.0), HexColor::rgb(23, 23, 23));
 }
