@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import ComponentRest from '@postlab/component-mqtt'
+import ComponentRest from '@postlab/component-sse'
 import Antd, { message } from 'ant-design-vue'
 
 const app = createApp(App)
