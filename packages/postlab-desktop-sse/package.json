@@ -1,5 +1,5 @@
 {
-  "name": "@postlab/desktop-mqtt",
+  "name": "test-app",
   "private": true,
   "version": "0.1.0",
   "type": "module",

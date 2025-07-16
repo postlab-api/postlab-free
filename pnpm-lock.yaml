@@ -59,11 +59,11 @@ importers:
   packages/postlab-desktop-mqtt:
     dependencies:
       '@postlab/codemirror-input':
-        specifier: ^0.0.1
-        version: 0.0.1(@lezer/common@1.2.1)(typescript@5.6.3)
+        specifier: ^0.0.7
+        version: 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
       '@postlab/component-mqtt':
-        specifier: 0.0.4
-        version: 0.0.4(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(terser@5.34.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))
+        specifier: 0.0.5
+        version: 0.0.5(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(typescript@5.6.3)
       '@tauri-apps/api':
         specifier: ^2
         version: 2.6.0
@@ -306,6 +306,117 @@ importers:
       vue-tsc:
         specifier: 1.8.8
         version: 1.8.8(typescript@4.9.5)
+
+  packages/postlab-desktop-socketio:
+    dependencies:
+      '@postlab/codemirror-input':
+        specifier: ^0.0.7
+        version: 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
+      '@postlab/component-socketio':
+        specifier: 0.0.1
+        version: 0.0.1(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(terser@5.34.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))
+      '@tauri-apps/api':
+        specifier: ^2
+        version: 2.6.0
+      '@tauri-apps/plugin-opener':
+        specifier: ^2
+        version: 2.4.0
+      ant-design-vue:
+        specifier: 4.2.6
+        version: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      vue:
+        specifier: 3.5.12
+        version: 3.5.12(typescript@5.6.3)
+    devDependencies:
+      '@tauri-apps/cli':
+        specifier: ^2
+        version: 2.6.1
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.4(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
+      typescript:
+        specifier: ~5.6.2
+        version: 5.6.3
+      vite:
+        specifier: ^6.0.3
+        version: 6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1)
+      vue-tsc:
+        specifier: ^2.1.10
+        version: 2.2.0(typescript@5.6.3)
+
+  packages/postlab-desktop-sse:
+    dependencies:
+      '@postlab/codemirror-input':
+        specifier: ^0.0.7
+        version: 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
+      '@postlab/component-mqtt':
+        specifier: 0.0.5
+        version: 0.0.5(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(typescript@5.6.3)
+      '@tauri-apps/api':
+        specifier: ^2
+        version: 2.6.0
+      '@tauri-apps/plugin-opener':
+        specifier: ^2
+        version: 2.4.0
+      ant-design-vue:
+        specifier: 4.2.6
+        version: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      vue:
+        specifier: 3.5.12
+        version: 3.5.12(typescript@5.6.3)
+    devDependencies:
+      '@tauri-apps/cli':
+        specifier: ^2
+        version: 2.6.1
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.4(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
+      typescript:
+        specifier: ~5.6.2
+        version: 5.6.3
+      vite:
+        specifier: ^6.0.3
+        version: 6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1)
+      vue-tsc:
+        specifier: ^2.1.10
+        version: 2.2.0(typescript@5.6.3)
+
+  packages/postlab-desktop-websocket:
+    dependencies:
+      '@postlab/codemirror-input':
+        specifier: ^0.0.7
+        version: 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
+      '@postlab/component-mqtt':
+        specifier: 0.0.5
+        version: 0.0.5(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(typescript@5.6.3)
+      '@tauri-apps/api':
+        specifier: ^2
+        version: 2.6.0
+      '@tauri-apps/plugin-opener':
+        specifier: ^2
+        version: 2.4.0
+      ant-design-vue:
+        specifier: 4.2.6
+        version: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      vue:
+        specifier: 3.5.12
+        version: 3.5.12(typescript@5.6.3)
+    devDependencies:
+      '@tauri-apps/cli':
+        specifier: ^2
+        version: 2.6.1
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.4(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
+      typescript:
+        specifier: ~5.6.2
+        version: 5.6.3
+      vite:
+        specifier: ^6.0.3
+        version: 6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1)
+      vue-tsc:
+        specifier: ^2.1.10
+        version: 2.2.0(typescript@5.6.3)
 
   packages/test-app:
     dependencies:
@@ -1022,6 +1133,9 @@ packages:
   '@codemirror/commands@6.7.0':
     resolution: {integrity: sha512-+cduIZ2KbesDhbykV02K25A5xIVrquSPz4UxxYBemRlAT2aW8dhwUgLDwej7q/RJUHKk4nALYcR1puecDvbdqw==}
 
+  '@codemirror/commands@6.8.1':
+    resolution: {integrity: sha512-KlGVYufHMQzxbdQONiLyGQDUW0itrLZwq3CcY7xpv9ZLRHqzkBSoteocBHtMCoY7/Ci4xhzSrToIeLg7FxHuaw==}
+
   '@codemirror/lang-javascript@6.2.2':
     resolution: {integrity: sha512-VGQfY+FCc285AhWuwjYxQyUQcYurWlxdKYT4bqwr3Twnd5wP5WSeu52t4tvvuWmljT4EmgEgZCqSieokhtY8hg==}
 
@@ -1137,20 +1251,20 @@ packages:
     resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
     engines: {node: '>=10'}
 
-  '@dnd-kit/abstract@0.1.19':
-    resolution: {integrity: sha512-meZsoPz0gvyUNu73/YaCSYxRFK/+NtChLPnF11mRMOq5smg+ssHCfMLiVzd7XQ/IA5DSpC5zU0f3YSz0qbSfnw==}
+  '@dnd-kit/abstract@0.1.20':
+    resolution: {integrity: sha512-MSbYsgMXmVTJCZuiR4ufEEORV0mgtD6yr5kbMuzds/WuvOL0eS1Ev7t+GuF7oFr+arask2jvjp1HQAgTuNr9KA==}
 
-  '@dnd-kit/collision@0.1.19':
-    resolution: {integrity: sha512-JFKkXW0bYwznhRkdsqAgr86euOrcHmMddoxSnWvPjswXSjABSYHB77GnIYmmE3xAcrV7+zc97WAj5v+1IonAcg==}
+  '@dnd-kit/collision@0.1.20':
+    resolution: {integrity: sha512-McF2lnhnB36ppmJ89J+kjxv+0tL5abon3tgWEFtyinl3s+Mbn/n6vVpWWAHldYUvVKDGjF9a4ImRJNQSct9YwQ==}
 
   '@dnd-kit/dom@0.1.9':
     resolution: {integrity: sha512-tHbEfCdNg2xTX7mP1W7fNrOL9sMfBVB0LIrNFSJCx5mjeMFh6VmZ1UQGRyCWoOeXLD3v570Xjcv2Jo4DHfrMCA==}
 
-  '@dnd-kit/geometry@0.1.19':
-    resolution: {integrity: sha512-+mpLdGgegVLc64dbwYuNRFz/W+llD85gh9NRSCmESp3iMWHZiOWX5dITrKEqIbQIvOzwSX6HtuggjUWnPGMLZQ==}
+  '@dnd-kit/geometry@0.1.20':
+    resolution: {integrity: sha512-JV4E8w64JvQcsFOD/css5ohiSGg0GWhU8glcp9dvWEY5PrFWG5xACycg1ghZdp+8tZ4s4BPtd1+hpsupW5WHNA==}
 
-  '@dnd-kit/state@0.1.19':
-    resolution: {integrity: sha512-uCsB7PuwRmg4x5pqMpALL0kIQPglGG20LKfCJD/LvVMf0nnzboL/n0iFVKIMOlhBzsM9fB3X4bih9LoAnaeRqA==}
+  '@dnd-kit/state@0.1.20':
+    resolution: {integrity: sha512-fGt0c5Ov6G/rX42yhUROsf9Bw6RMAvcJs/ibb4BshuNCMwQw9M8UAvcLmog1mK6ycdnQXXpDG50BGcGmR6n10w==}
 
   '@emotion/hash@0.9.2':
     resolution: {integrity: sha512-MyqliTZGuOm3+5ZRSaaBGP3USLw6+EGykkwZns2EPC5g8jJ4z9OrdZY9apkl3+UP9+sdz76YYkwCKP5gh8iY3g==}
@@ -1961,6 +2075,70 @@ packages:
   '@lezer/xml@1.0.5':
     resolution: {integrity: sha512-VFouqOzmUWfIg+tfmpcdV33ewtK+NSwd4ngSe1aG7HFb4BN0ExyY1b8msp+ndFrnlG4V4iC8yXacjFtrwERnaw==}
 
+  '@napi-rs/canvas-android-arm64@0.1.73':
+    resolution: {integrity: sha512-s8dMhfYIHVv7gz8BXg3Nb6cFi950Y0xH5R/sotNZzUVvU9EVqHfkqiGJ4UIqu+15UhqguT6mI3Bv1mhpRkmMQw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+
+  '@napi-rs/canvas-darwin-arm64@0.1.73':
+    resolution: {integrity: sha512-bLPCq8Yyq1vMdVdIpQAqmgf6VGUknk8e7NdSZXJJFOA9gxkJ1RGcHOwoXo7h0gzhHxSorg71hIxyxtwXpq10Rw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@napi-rs/canvas-darwin-x64@0.1.73':
+    resolution: {integrity: sha512-GR1CcehDjdNYXN3bj8PIXcXfYLUUOQANjQpM+KNnmpRo7ojsuqPjT7ZVH+6zoG/aqRJWhiSo+ChQMRazZlRU9g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@napi-rs/canvas-linux-arm-gnueabihf@0.1.73':
+    resolution: {integrity: sha512-cM7F0kBJVFio0+U2iKSW4fWSfYQ8CPg4/DRZodSum/GcIyfB8+UPJSRM1BvvlcWinKLfX1zUYOwonZX9IFRRcw==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-arm64-gnu@0.1.73':
+    resolution: {integrity: sha512-PMWNrMON9uz9klz1B8ZY/RXepQSC5dxxHQTowfw93Tb3fLtWO5oNX2k9utw7OM4ypT9BUZUWJnDQ5bfuXc/EUQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-arm64-musl@0.1.73':
+    resolution: {integrity: sha512-lX0z2bNmnk1PGZ+0a9OZwI2lPPvWjRYzPqvEitXX7lspyLFrOzh2kcQiLL7bhyODN23QvfriqwYqp5GreSzVvA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-riscv64-gnu@0.1.73':
+    resolution: {integrity: sha512-QDQgMElwxAoADsSR3UYvdTTQk5XOyD9J5kq15Z8XpGwpZOZsSE0zZ/X1JaOtS2x+HEZL6z1S6MF/1uhZFZb5ig==}
+    engines: {node: '>= 10'}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-x64-gnu@0.1.73':
+    resolution: {integrity: sha512-wbzLJrTalQrpyrU1YRrO6w6pdr5vcebbJa+Aut5QfTaW9eEmMb1WFG6l1V+cCa5LdHmRr8bsvl0nJDU/IYDsmw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-x64-musl@0.1.73':
+    resolution: {integrity: sha512-xbfhYrUufoTAKvsEx2ZUN4jvACabIF0h1F5Ik1Rk4e/kQq6c+Dwa5QF0bGrfLhceLpzHT0pCMGMDeQKQrcUIyA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@napi-rs/canvas-win32-x64-msvc@0.1.73':
+    resolution: {integrity: sha512-YQmHXBufFBdWqhx+ympeTPkMfs3RNxaOgWm59vyjpsub7Us07BwCcmu1N5kildhO8Fm0syoI2kHnzGkJBLSvsg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@napi-rs/canvas@0.1.73':
+    resolution: {integrity: sha512-9iwPZrNlCK4rG+vWyDvyvGeYjck9MoP0NVQP6N60gqJNFA1GsN0imG05pzNsqfCvFxUxgiTYlR8ff0HC1HXJiw==}
+    engines: {node: '>= 10'}
+
   '@noble/curves@1.6.0':
     resolution: {integrity: sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==}
     engines: {node: ^14.21.3 || >=16}
@@ -2075,11 +2253,20 @@ packages:
   '@polka/url@1.0.0-next.25':
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
 
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
   '@postlab/codemirror-input@0.0.1':
     resolution: {integrity: sha512-12ZyoXc+u9QcTQiRiZdgucKFZKQpFryppB6KT+fKdy7DKBnSQ06vVWwdcooLjlaU+nTUTGLQK/oKJnVlc9qGqw==}
 
-  '@postlab/component-mqtt@0.0.4':
-    resolution: {integrity: sha512-J+oYWFs/Y52a9WDxhY76gNi/X2b3qbw+QF2KbBGPktd6wQmpukysmQYILyUXgIFhF6jEVgxAaXeJRUQifk7Nrg==}
+  '@postlab/codemirror-input@0.0.7':
+    resolution: {integrity: sha512-SNphP0Cm0EQlVlPpLbPIGE4Hfs7wkK14GLFF3bZWz3FEZ3nzblG16uOK7TditlUGt1s+XZnoFN6LSA7aHxMWFg==}
+
+  '@postlab/component-mqtt@0.0.5':
+    resolution: {integrity: sha512-zcfRHHj1JGkhfVReurCQLKt57JxQlAtBZhPYzloz2g5xFBXAYRVsYEv4jQmfSUOfvdgFBOpeyKzE+Vkd1/gkhQ==}
+
+  '@postlab/component-socketio@0.0.1':
+    resolution: {integrity: sha512-GLnAUR4WIsIGkWQXY+yaEmP3MxodGjBDBebYwHojT1cyDKVOP8mpCtLtxyf7AM/2ZJQ8JTYrGFayzfaO0bCC4w==}
 
   '@postlab/types@0.0.1':
     resolution: {integrity: sha512-MEHh1ySpQoMUYjtPTe9lxZ/idPRMogIqfFQiV8/stecY5m0jCDp5efrAewzBT4GMJeoF8/sqmBMypSGPv3rN2Q==}
@@ -5429,6 +5616,10 @@ packages:
   pause-stream@0.0.11:
     resolution: {integrity: sha512-e3FBlXLmN/D1S+zHzanP4E/4Z60oFAa3O051qt1pxa7DEJWKAyil6upYVXCWadEnuoqa4Pkc9oUx9zsxYeRv8A==}
 
+  pdfjs-dist@4.10.38:
+    resolution: {integrity: sha512-/Y3fcFrXEAsMjJXeL9J8+ZG9U01LbuWaYypvDW2ycW1jL269L3js3DVBjDJ0Up9Np1uqDXsDrRihHANhZOlwdQ==}
+    engines: {node: '>=20'}
+
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
 
@@ -6235,12 +6426,18 @@ packages:
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
 
+  tiny-invariant@1.3.3:
+    resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
+
   tinyexec@0.3.0:
     resolution: {integrity: sha512-tVGE0mVJPGb0chKhqmsoosjsS+qUnJVGJpZgsHYQcGoPlG3B51R3PouqTgEGH2Dc9jjFyOqOpix6ZHNMXp1FZg==}
 
   tinyglobby@0.2.13:
     resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
     engines: {node: '>=12.0.0'}
+
+  tippy.js@6.3.7:
+    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
 
   title-case@3.0.3:
     resolution: {integrity: sha512-e1zGYRvbffpcHIrnuqT0Dh+gEJtDaxDSoG4JAIpq4oDFyooziLBIiYQv0GBT4FUAnUop5uZ1hiIAj7oAF6sOCA==}
@@ -6541,6 +6738,10 @@ packages:
   url-join@4.0.1:
     resolution: {integrity: sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==}
 
+  url@0.11.4:
+    resolution: {integrity: sha512-oCwdVC7mTuWiPyjLUz/COz5TLk6wgp0RCsN+wHZ2Ekneac9w8uuV0njcbbie2ME+Vs+d6duwmYuR3HgQXs1fOg==}
+    engines: {node: '>= 0.4'}
+
   urlpattern-polyfill@10.0.0:
     resolution: {integrity: sha512-H/A06tKD7sS1O1X2SshBVeA5FLycRpjqiBeqGKmBwBDBy28EnRjORxTNe269KSSr5un5qyWi1iL61wLxpd+ZOg==}
 
@@ -6732,6 +6933,11 @@ packages:
     peerDependencies:
       vue: 3.5.12
 
+  vue-pdf-embed@2.1.0:
+    resolution: {integrity: sha512-yEtitm2q1jY2pmgnbwDILhm8cEby01WhfZJCMKvhKwdorwc92FDefIDZ5yf0ixu4t+WHMfc1+Zz4OGsoW/PRag==}
+    peerDependencies:
+      vue: 3.5.12
+
   vue-promise-modals@0.1.0:
     resolution: {integrity: sha512-LmPejeqvZSkxj4KkJe6ZUEJmCUQXVeEAj9ihTX+BRFfZftVCZSZd3B4uuZSKF0iCeQUemkodXUZFxcsNT/2dmg==}
 
@@ -6742,6 +6948,11 @@ packages:
 
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
+
+  vue-tippy@6.5.0:
+    resolution: {integrity: sha512-U44UDETTLuZWZGosagslEwgimWQdt1JVSxfWStVPnVdeqo2jo9X5zW3SB04k7JaTFosdgrDhFsUDrd6n42Nh7Q==}
+    peerDependencies:
+      vue: 3.5.12
 
   vue-tsc@1.8.8:
     resolution: {integrity: sha512-bSydNFQsF7AMvwWsRXD7cBIXaNs/KSjvzWLymq/UtKE36697sboX4EccSHFVxvgdBlI1frYPc/VMKJNB7DFeDQ==}
@@ -8030,6 +8241,13 @@ snapshots:
       '@codemirror/view': 6.34.1
       '@lezer/common': 1.2.1
 
+  '@codemirror/commands@6.8.1':
+    dependencies:
+      '@codemirror/language': 6.10.1
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.34.1
+      '@lezer/common': 1.2.1
+
   '@codemirror/lang-javascript@6.2.2':
     dependencies:
       '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)(@lezer/common@1.2.1)
@@ -8223,32 +8441,32 @@ snapshots:
 
   '@ctrl/tinycolor@3.6.1': {}
 
-  '@dnd-kit/abstract@0.1.19':
+  '@dnd-kit/abstract@0.1.20':
     dependencies:
-      '@dnd-kit/geometry': 0.1.19
-      '@dnd-kit/state': 0.1.19
+      '@dnd-kit/geometry': 0.1.20
+      '@dnd-kit/state': 0.1.20
       tslib: 2.8.1
 
-  '@dnd-kit/collision@0.1.19':
+  '@dnd-kit/collision@0.1.20':
     dependencies:
-      '@dnd-kit/abstract': 0.1.19
-      '@dnd-kit/geometry': 0.1.19
+      '@dnd-kit/abstract': 0.1.20
+      '@dnd-kit/geometry': 0.1.20
       tslib: 2.8.1
 
   '@dnd-kit/dom@0.1.9':
     dependencies:
-      '@dnd-kit/abstract': 0.1.19
-      '@dnd-kit/collision': 0.1.19
-      '@dnd-kit/geometry': 0.1.19
-      '@dnd-kit/state': 0.1.19
+      '@dnd-kit/abstract': 0.1.20
+      '@dnd-kit/collision': 0.1.20
+      '@dnd-kit/geometry': 0.1.20
+      '@dnd-kit/state': 0.1.20
       tslib: 2.8.1
 
-  '@dnd-kit/geometry@0.1.19':
+  '@dnd-kit/geometry@0.1.20':
     dependencies:
-      '@dnd-kit/state': 0.1.19
+      '@dnd-kit/state': 0.1.20
       tslib: 2.8.1
 
-  '@dnd-kit/state@0.1.19':
+  '@dnd-kit/state@0.1.20':
     dependencies:
       '@preact/signals-core': 1.11.0
       tslib: 2.8.1
@@ -9239,6 +9457,50 @@ snapshots:
       '@lezer/highlight': 1.2.0
       '@lezer/lr': 1.3.14
 
+  '@napi-rs/canvas-android-arm64@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-darwin-arm64@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-darwin-x64@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm-gnueabihf@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm64-gnu@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm64-musl@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-linux-riscv64-gnu@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-linux-x64-gnu@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-linux-x64-musl@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas-win32-x64-msvc@0.1.73':
+    optional: true
+
+  '@napi-rs/canvas@0.1.73':
+    optionalDependencies:
+      '@napi-rs/canvas-android-arm64': 0.1.73
+      '@napi-rs/canvas-darwin-arm64': 0.1.73
+      '@napi-rs/canvas-darwin-x64': 0.1.73
+      '@napi-rs/canvas-linux-arm-gnueabihf': 0.1.73
+      '@napi-rs/canvas-linux-arm64-gnu': 0.1.73
+      '@napi-rs/canvas-linux-arm64-musl': 0.1.73
+      '@napi-rs/canvas-linux-riscv64-gnu': 0.1.73
+      '@napi-rs/canvas-linux-x64-gnu': 0.1.73
+      '@napi-rs/canvas-linux-x64-musl': 0.1.73
+      '@napi-rs/canvas-win32-x64-msvc': 0.1.73
+    optional: true
+
   '@noble/curves@1.6.0':
     dependencies:
       '@noble/hashes': 1.5.0
@@ -9337,6 +9599,8 @@ snapshots:
 
   '@polka/url@1.0.0-next.25': {}
 
+  '@popperjs/core@2.11.8': {}
+
   '@postlab/codemirror-input@0.0.1(@lezer/common@1.2.1)(typescript@4.9.5)':
     dependencies:
       '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
@@ -9401,7 +9665,130 @@ snapshots:
       - '@lezer/common'
       - typescript
 
-  '@postlab/component-mqtt@0.0.4(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(terser@5.34.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))':
+  '@postlab/codemirror-input@0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)':
+    dependencies:
+      '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
+      '@codemirror/commands': 6.8.1
+      '@codemirror/lang-javascript': 6.2.2
+      '@codemirror/lang-json': 6.0.1
+      '@codemirror/lang-xml': 6.1.0
+      '@codemirror/language': 6.10.1
+      '@codemirror/legacy-modes': 6.4.1
+      '@codemirror/lint': 6.8.2
+      '@codemirror/merge': 6.7.2
+      '@codemirror/search': 6.5.6
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.25.1
+      '@lezer/highlight': 1.2.0
+      '@shopify/lang-jsonc': 1.0.0
+      '@tabler/icons-vue': 3.34.0(vue@3.5.12(typescript@5.6.3))
+      '@vueuse/core': 13.3.0(vue@3.5.12(typescript@5.6.3))
+      acorn-walk: 8.3.4
+      ant-design-vue: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      buffer: 6.0.3
+      fp-ts: 2.16.9
+      jsonc-parser: 3.3.1
+      lodash-es: 4.17.21
+      normalize.css: 8.0.1
+      nprogress: 0.2.0
+      rxjs: 7.8.1
+      tern: 0.24.3
+      vue: 3.5.12(typescript@5.6.3)
+      vue-router: 4.4.5(vue@3.5.12(typescript@5.6.3))
+      workbox-window: 7.1.0
+      xml-formatter: 3.6.3
+    transitivePeerDependencies:
+      - '@lezer/common'
+      - typescript
+
+  '@postlab/component-mqtt@0.0.5(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(typescript@5.6.3)':
+    dependencies:
+      '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
+      '@atlaskit/pragmatic-drag-and-drop': 1.7.4
+      '@atlaskit/pragmatic-drag-and-drop-flourish': 2.0.3(react@18.3.1)
+      '@atlaskit/pragmatic-drag-and-drop-hitbox': 1.1.0
+      '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
+      '@codemirror/commands': 6.7.0
+      '@codemirror/lang-javascript': 6.2.2
+      '@codemirror/lang-json': 6.0.1
+      '@codemirror/lang-xml': 6.1.0
+      '@codemirror/language': 6.10.1
+      '@codemirror/legacy-modes': 6.4.1
+      '@codemirror/lint': 6.8.2
+      '@codemirror/merge': 6.7.2
+      '@codemirror/search': 6.5.6
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.25.1
+      '@tabler/icons-vue': 3.34.0(vue@3.5.12(typescript@5.6.3))
+      '@urql/core': 5.0.6(graphql@16.9.0)
+      '@urql/devtools': 2.0.3(@urql/core@5.0.6(graphql@16.9.0))(graphql@16.9.0)
+      '@urql/exchange-auth': 2.2.0(@urql/core@5.0.6(graphql@16.9.0))
+      '@vueuse/core': 13.3.0(vue@3.5.12(typescript@5.6.3))
+      acorn-walk: 8.3.4
+      ant-design-vue: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      aws4fetch: 1.0.20
+      axios: 1.8.2
+      buffer: 6.0.3
+      cookie-es: 1.2.2
+      dayjs: 1.11.13
+      esprima: 4.0.1
+      events: 3.3.0
+      fp-ts: 2.16.9
+      globalthis: 1.0.4
+      hawk: 9.0.2
+      insomnia-importers: 3.6.0(openapi-types@1.3.5)
+      intermock: 0.2.5
+      io-ts: 2.2.21(fp-ts@2.16.9)
+      js-md5: 0.8.3
+      js-yaml: 4.1.0
+      jsonc-parser: 3.3.1
+      jsonpath-plus: 10.0.0
+      lodash-es: 4.17.21
+      lossless-json: 4.0.2
+      markdown-it: 14.1.0
+      minisearch: 7.1.0
+      mitt: 3.0.1
+      normalize.css: 8.0.1
+      nprogress: 0.2.0
+      paho-mqtt: 1.1.0
+      parser-ts: 0.7.0(fp-ts@2.16.9)
+      path: 0.12.7
+      postman-collection: 4.5.0
+      process: 0.11.10
+      qs: 6.13.0
+      quicktype-core: 23.0.170
+      readline: 1.3.0
+      reflect-metadata: 0.2.2
+      rxjs: 7.8.1
+      set-cookie-parser: 2.7.0
+      set-cookie-parser-es: 1.0.5
+      socket.io-client-v2: socket.io-client@2.5.0
+      socket.io-client-v3: socket.io-client@3.1.3
+      socket.io-client-v4: socket.io-client@4.8.0
+      socketio-wildcard: 2.0.0
+      splitpanes: 3.1.5
+      stream-browserify: 3.0.0
+      subscriptions-transport-ws: 0.11.0(graphql@16.9.0)
+      superjson: 2.2.2
+      tern: 0.24.3
+      timers: 0.1.1
+      vue: 3.5.12(typescript@5.6.3)
+      vue-i18n: 10.0.4(vue@3.5.12(typescript@5.6.3))
+      workbox-window: 7.1.0
+    transitivePeerDependencies:
+      - '@lezer/common'
+      - '@types/react'
+      - bufferutil
+      - debug
+      - encoding
+      - graphql
+      - openapi-types
+      - react
+      - supports-color
+      - typescript
+      - utf-8-validate
+
+  '@postlab/component-socketio@0.0.1(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(terser@5.34.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))':
     dependencies:
       '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
@@ -9425,6 +9812,7 @@ snapshots:
       '@hoppscotch/ui': 0.2.2(eslint@9.12.0(jiti@2.4.2))(terser@5.34.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.34.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
       '@lezer/highlight': 1.2.0
       '@noble/curves': 1.6.0
+      '@postlab/codemirror-input': 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
       '@scure/base': 1.1.9
       '@shopify/lang-jsonc': 1.0.0
       '@tabler/icons-vue': 3.34.0(vue@3.5.12(typescript@5.6.3))
@@ -9484,9 +9872,24 @@ snapshots:
       superjson: 2.2.2
       tern: 0.24.3
       timers: 0.1.1
+      tiny-invariant: 1.3.3
+      tippy.js: 6.3.7
+      tsyringe: 4.10.0
+      url: 0.11.4
+      util: 0.12.5
+      uuid: 10.0.0
+      verzod: 0.2.4(zod@3.25.67)
       vue: 3.5.12(typescript@5.6.3)
       vue-i18n: 10.0.4(vue@3.5.12(typescript@5.6.3))
+      vue-pdf-embed: 2.1.0(vue@3.5.12(typescript@5.6.3))
+      vue-router: 4.4.5(vue@3.5.12(typescript@5.6.3))
+      vue-tippy: 6.5.0(vue@3.5.12(typescript@5.6.3))
+      vuedraggable-es: 4.1.1(vue@3.5.12(typescript@5.6.3))
+      wonka: 6.3.4
       workbox-window: 7.1.0
+      xml-formatter: 3.6.3
+      yargs-parser: 21.1.1
+      zod: 3.25.67
     transitivePeerDependencies:
       - '@lezer/common'
       - '@types/react'
@@ -13311,6 +13714,10 @@ snapshots:
     dependencies:
       through: 2.3.8
 
+  pdfjs-dist@4.10.38:
+    optionalDependencies:
+      '@napi-rs/canvas': 0.1.73
+
   pend@1.2.0: {}
 
   picocolors@1.1.1: {}
@@ -14224,12 +14631,18 @@ snapshots:
 
   tiny-inflate@1.0.3: {}
 
+  tiny-invariant@1.3.3: {}
+
   tinyexec@0.3.0: {}
 
   tinyglobby@0.2.13:
     dependencies:
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
+
+  tippy.js@6.3.7:
+    dependencies:
+      '@popperjs/core': 2.11.8
 
   title-case@3.0.3:
     dependencies:
@@ -14517,6 +14930,11 @@ snapshots:
 
   url-join@4.0.1: {}
 
+  url@0.11.4:
+    dependencies:
+      punycode: 1.4.1
+      qs: 6.13.0
+
   urlpattern-polyfill@10.0.0: {}
 
   urlpattern-polyfill@8.0.2: {}
@@ -14728,6 +15146,11 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12(typescript@5.6.3)
 
+  vue-pdf-embed@2.1.0(vue@3.5.12(typescript@5.6.3)):
+    dependencies:
+      pdfjs-dist: 4.10.38
+      vue: 3.5.12(typescript@5.6.3)
+
   vue-promise-modals@0.1.0(typescript@5.6.3):
     dependencies:
       vue: 3.5.12(typescript@5.6.3)
@@ -14754,6 +15177,11 @@ snapshots:
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
+
+  vue-tippy@6.5.0(vue@3.5.12(typescript@5.6.3)):
+    dependencies:
+      tippy.js: 6.3.7
+      vue: 3.5.12(typescript@5.6.3)
 
   vue-tsc@1.8.8(typescript@4.9.5):
     dependencies:
