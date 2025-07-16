@@ -10,8 +10,8 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@postlab/codemirror-input": "^0.0.1",
-    "@postlab/component-mqtt": "0.0.4",
+    "@postlab/codemirror-input": "^0.0.7",
+    "@postlab/component-mqtt": "0.0.5",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "ant-design-vue": "4.2.6",
