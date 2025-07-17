@@ -1,3 +1,4 @@
+// C:\Users\kwy\AppData\Roaming\Code\User\settings.json
 {
   // "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -46,10 +47,12 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true // 保存的时候自动格式化
-},
+  },
   "prettier.configPath": ".prettierrc",
   "prettier.prettierPath": "./node_modules/prettier",
-   "search.exclude": {
+  "search.exclude": {
+    "package-lock.json": true,
+    "yarn.lock": true,
     "**/node_modules": true,
     "**/build": true,
     "**/bundle": true,
@@ -60,5 +63,12 @@
     "**/Cargo.lock": true,
     "**/pnpm-lock.yaml": true,
     "**/.yaml": true
-  }
+  },
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "files.eol": "\n",
+  "files.associations": {
+    "*.json5": "jsonc"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
 }
