@@ -17,6 +17,8 @@ import * as path from 'path'
 import legacy from '@vitejs/plugin-legacy'
 import Unfonts from 'unplugin-fonts/vite'
 
+// @ts-expect-error process is a nodejs global
+const host = process.env.TAURI_DEV_HOST
 const ENV = loadEnv('development', path.resolve(__dirname, '../../'))
 
 export default defineConfig({
@@ -25,12 +27,6 @@ export default defineConfig({
   define: {
     // For 'util' polyfill required by dep of '@apidevtools/swagger-parser'
     'process.env': {},
-  },
-  server: {
-    port: 3000,
-  },
-  preview: {
-    port: 3000,
   },
   publicDir: path.resolve(__dirname, '../postlab-component-rest/public'),
   build: {
@@ -44,21 +40,6 @@ export default defineConfig({
     alias: {
       // TODO: Maybe leave ~ only for individual apps and not use on common
       '~': path.resolve(__dirname, '../postlab-component-rest/src'),
-      '@postlab/api': path.resolve(__dirname, '../postlab-api/src/api'),
-      '@postlab/services': path.resolve(__dirname, '../postlab-services/src'),
-      '@postlab/store': path.resolve(__dirname, '../postlab-di-ioc/src/store'),
-      '@postlab/service': path.resolve(__dirname, '../postlab-di-ioc/src/service'),
-      '@postlab/helpers': path.resolve(__dirname, '../postlab-helpers/src'),
-      '@postlab/platform': path.resolve(__dirname, '../postlab-platform/src/platform'),
-
-      '@composables': path.resolve(__dirname, '../postlab-component-rest/src/composables'),
-      '@modules': path.resolve(__dirname, '../postlab-component-rest/src/modules'),
-      '@components': path.resolve(__dirname, '../postlab-component-rest/src/components'),
-      '@helpers': path.resolve(__dirname, '../postlab-component-rest/src/helpers'),
-      '@functional': path.resolve(__dirname, '../postlab-component-rest/src/helpers/functional'),
-      '@workers': path.resolve(__dirname, '../postlab-component-rest/src/workers'),
-      '@platform': path.resolve(__dirname, './src/platform'),
-      '@lib': path.resolve(__dirname, './src/lib'),
       stream: 'stream-browserify',
       util: 'util',
       querystring: 'qs',
@@ -71,20 +52,6 @@ export default defineConfig({
       metas: META_TAGS(ENV),
     }),
     Vue(),
-    Pages({
-      routeStyle: 'nuxt',
-      dirs: '../postlab-component-rest/src/pages',
-      importMode: 'async',
-      onRoutesGenerated(routes) {
-        return (generateSitemap as any as typeof generateSitemap)({
-          routes,
-          nuxtStyle: true,
-          allowRobots: true,
-          dest: '.sitemap-gen',
-          hostname: ENV.VITE_BASE_URL,
-        })
-      },
-    }),
     StaticCopy({
       targets: [
         {
@@ -93,43 +60,10 @@ export default defineConfig({
         },
       ],
     }),
-    Layouts({
-      layoutsDirs: '../postlab-component-rest/src/layouts',
-      defaultLayout: 'default',
-    }),
     VueI18n({
       runtimeOnly: false,
       compositionOnly: true,
       include: [path.resolve(__dirname, 'locales')],
-    }),
-    Components({
-      dts: '../postlab-component-rest/src/components.d.ts',
-      dirs: ['../postlab-component-rest/src/components', './src/components'],
-      directoryAsNamespace: true,
-      resolvers: [
-        IconResolver({
-          prefix: 'icon',
-          customCollections: ['hopp', 'auth', 'brands'],
-        }),
-        (compName: string) => {
-          if (compName.startsWith('Hopp')) return { name: compName, from: '@hoppscotch/ui' }
-          else return undefined
-        },
-      ],
-      types: [
-        {
-          from: 'vue-tippy',
-          names: ['Tippy'],
-        },
-      ],
-    }),
-    Icons({
-      compiler: 'vue3',
-      customCollections: {
-        hopp: FileSystemIconLoader('../postlab-component-rest/assets/icons'),
-        auth: FileSystemIconLoader('../postlab-component-rest/assets/icons/auth'),
-        brands: FileSystemIconLoader('../postlab-component-rest/assets/icons/brands'),
-      },
     }),
     VitePWA({
       manifest: {
@@ -172,27 +106,30 @@ export default defineConfig({
         ],
       },
     }),
-    Unfonts({
-      fontsource: {
-        families: [
-          {
-            name: 'Inter Variable',
-            variables: ['variable-full'],
-          },
-          {
-            name: 'Material Symbols Rounded Variable',
-            variables: ['variable-full'],
-          },
-          {
-            name: 'Roboto Mono Variable',
-            variables: ['variable-full'],
-          },
-        ],
-      },
-    }),
     legacy({
       modernPolyfills: ['es.string.replace-all'],
       renderLegacyChunks: false,
     }),
   ],
+  // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
+  //
+  // 1. prevent vite from obscuring rust errors
+  clearScreen: false,
+  // 2. tauri expects a fixed port, fail if that port is not available
+  server: {
+    port: 1420,
+    strictPort: true,
+    host: host || false,
+    hmr: host
+      ? {
+          protocol: 'ws',
+          host,
+          port: 1421,
+        }
+      : undefined,
+    watch: {
+      // 3. tell vite to ignore watching `src-tauri`
+      ignored: ['**/src-tauri/**'],
+    },
+  },
 })

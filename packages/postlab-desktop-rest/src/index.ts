@@ -19,7 +19,7 @@ export async function createHoppApp(el: string | Element, platformDef: PlatformD
 
   const app = createApp(App)
   app.use(Antdv)
-  // app.use(ComponentRest)
+  app.use(ComponentRest)
   // app.config.globalProperties.$emitter = emitter
   // app.config.globalProperties.$message = message
   // emitter.emit('appMounted', app)

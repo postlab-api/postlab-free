@@ -4,20 +4,17 @@
   "version": "2025.1.1",
   "type": "module",
   "scripts": {
-    "dev:vite": "vite",
-    "dev:tauri": "tauri dev",
-    "dev:gql-codegen": "graphql-codegen --require dotenv/config --config gql-codegen.yml dotenv_config_path=\"../../.env\" --watch",
-    "dev": "pnpm exec npm-run-all -p -l dev:*",
-    "build": "node --max_old_space_size=4096 ./node_modules/vite/bin/vite.js build",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "tauri": "tauri",
-    "gql-codegen": "graphql-codegen --require dotenv/config --config gql-codegen.yml dotenv_config_path=\"../../.env\""
+    "tauri": "tauri"
   },
   "dependencies": {
-    "@postlab/codemirror-input": "0.0.1",
     "@fontsource-variable/inter": "5.0.15",
     "@fontsource-variable/material-symbols-rounded": "5.0.16",
     "@fontsource-variable/roboto-mono": "5.0.16",
+    "@postlab/codemirror-input": "0.0.1",
+    "@postlab/component-rest": "0.0.3",
     "@tauri-apps/api": "^2.6.0",
     "@tauri-apps/cli": "^2.6.1",
     "@tauri-apps/plugin-dialog": "~2",
@@ -46,14 +43,6 @@
     "zod": "3.25.67"
   },
   "devDependencies": {
-    "@graphql-codegen/add": "5.0.0",
-    "@graphql-codegen/cli": "5.0.0",
-    "@graphql-codegen/typed-document-node": "5.0.1",
-    "@graphql-codegen/typescript": "4.0.1",
-    "@graphql-codegen/typescript-operations": "4.0.1",
-    "@graphql-codegen/typescript-urql-graphcache": "2.4.5",
-    "@graphql-codegen/urql-introspection": "2.2.1",
-    "@graphql-typed-document-node/core": "3.2.0",
     "@iconify-json/lucide": "1.1.144",
     "@intlify/unplugin-vue-i18n": "6.0.4",
     "@postlab/types": "0.0.1",

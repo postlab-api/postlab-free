@@ -9,8 +9,7 @@
       },
     }"
   >
-    <!-- <CompactModule /> -->
-<a>ss</a>
+    <CompactModule />
     <context-holder />
   </a-config-provider>
 </template>
@@ -18,6 +17,6 @@
 <script setup lang="ts">
 import { ref, onBeforeMount } from 'vue'
 import { theme, message } from 'ant-design-vue'
-// import { CompactModule } from '@postlab/component-rest'
+import { CompactModule } from '@postlab/component-rest'
 const [messageApi, contextHolder] = message.useMessage()
 </script>
