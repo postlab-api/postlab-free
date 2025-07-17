@@ -2,7 +2,6 @@
 import { ref, onBeforeMount } from 'vue'
 import { theme, message } from 'ant-design-vue'
 import { WebsocketModule } from '@postlab/component-websocket'
-import { InputModule } from '@postlab/codemirror-input'
 import { invoke } from '@tauri-apps/api/core'
 
 const [messageApi, contextHolder] = message.useMessage()

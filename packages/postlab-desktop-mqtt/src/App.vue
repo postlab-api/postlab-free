@@ -2,7 +2,6 @@
 import { ref, onBeforeMount } from 'vue'
 import { theme, message } from 'ant-design-vue'
 import { MqttModule } from '@postlab/component-mqtt'
-import { InputModule } from '@postlab/codemirror-input'
 import { invoke } from '@tauri-apps/api/core'
 
 const [messageApi, contextHolder] = message.useMessage()
@@ -23,18 +22,7 @@ const handleChangeKey = (v: string) => console.log('handleChangeKey', v)
       },
     }"
   >
-    <MqttModule  />
-    <!-- <InputModule
-      class="codemirror-input"
-      :modelValue="name"
-      placeholder="count.key"
-      :auto-complete-environment="true"
-      :aggregate-environments="[]"
-      :request-variables="[]"
-      @update:modelValue="handleUpdateModelValue"
-      @change="handleChangeKey"
-      style="width: 30%"
-    /> -->
+    <MqttModule />
     <context-holder />
   </a-config-provider>
 </template>

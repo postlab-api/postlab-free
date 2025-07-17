@@ -1,23 +1,14 @@
 import { defineConfig, loadEnv, normalizePath } from 'vite'
 import { APP_INFO, META_TAGS } from './meta'
 import { viteStaticCopy as StaticCopy } from 'vite-plugin-static-copy'
-import generateSitemap from 'vite-plugin-pages-sitemap'
 import HtmlConfig from 'vite-plugin-html-config'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
-import Components from 'unplugin-vue-components/vite'
-import Icons from 'unplugin-icons/vite'
 import Inspect from 'vite-plugin-inspect'
 import { VitePWA } from 'vite-plugin-pwa'
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
-import IconResolver from 'unplugin-icons/resolver'
-import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 import * as path from 'path'
 import legacy from '@vitejs/plugin-legacy'
-import Unfonts from 'unplugin-fonts/vite'
 
-// @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST
 const ENV = loadEnv('development', path.resolve(__dirname, '../../'))
 
