@@ -1,8 +1,8 @@
 {
   "name": "postlab-free",
-  "version": "3.0.1",
+  "version": "0.0.1",
   "description": "Open source API development ecosystem",
-  "author": "Hoppscotch (support@hoppscotch.io)",
+  "author": "postlab",
   "private": true,
   "license": "MIT",
   "packageManager": "pnpm@10.2.1",
@@ -10,8 +10,6 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
     "dev": "pnpm -r do-dev",
-    "generate": "pnpm -r do-build-prod",
-    "start": "http-server packages/hoppscotch-selfhost-web/dist -p 3000",
     "lint": "pnpm -r do-lint",
     "lintfix": "pnpm -r do-lintfix",
     "test": "pnpm -r do-test"
