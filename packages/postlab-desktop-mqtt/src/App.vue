@@ -1,14 +1,9 @@
 <script setup lang="ts">
-import { ref, onBeforeMount } from 'vue'
 import { theme, message } from 'ant-design-vue'
+// @ts-ignore
 import { MqttModule } from '@postlab/component-mqtt'
-import { invoke } from '@tauri-apps/api/core'
 
-const [messageApi, contextHolder] = message.useMessage()
-const name = ref('')
-
-const handleUpdateModelValue = (v: string) => console.log('handleUpdateModelValue', v)
-const handleChangeKey = (v: string) => console.log('handleChangeKey', v)
+const [contextHolder] = message.useMessage()
 </script>
 
 <template>
