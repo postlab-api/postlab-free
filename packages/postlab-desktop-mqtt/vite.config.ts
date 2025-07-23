@@ -1,12 +1,22 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import * as path from 'path'
 
-// @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
   plugins: [vue()],
+  resolve: {
+    alias: {
+      // TODO: Maybe leave ~ only for individual apps and not use on common
+      '~': path.resolve(__dirname, './src'),
+      stream: 'stream-browserify',
+      util: 'util',
+      querystring: 'qs',
+    },
+    dedupe: ['vue'],
+  },
   define: {
     // For 'util' polyfill required by dep of '@apidevtools/swagger-parser'
     'process.env': {},
