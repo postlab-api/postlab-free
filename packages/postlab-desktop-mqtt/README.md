@@ -8,3 +8,6 @@
 
 删除 ~/.cargo/.package-cache 或者 cargo clean
 
+## 在 tauri 中导入插件
+
+* https://github.com/tauri-apps/tauri/discussions/11411

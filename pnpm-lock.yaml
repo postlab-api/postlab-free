@@ -71,11 +71,11 @@ importers:
         specifier: 0.0.11
         version: 0.0.11(@lezer/common@1.2.1)(vue@3.5.12(typescript@5.6.3))
       '@postlab/component-mqtt':
-        specifier: 0.0.19
-        version: 0.0.19(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(vue@3.5.12(typescript@5.6.3))
+        specifier: 0.0.29
+        version: 0.0.29(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(vue@3.5.12(typescript@5.6.3))
       '@postlab/platform':
-        specifier: 0.0.16
-        version: 0.0.16(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
+        specifier: 0.0.19
+        version: 0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
       '@postlab/types':
         specifier: 0.0.6
         version: 0.0.6
@@ -466,6 +466,10 @@ packages:
 
   '@CuriousCorrelation/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-appload/tar.gz/1b52e49d881926135838cf6cfebdc1643a9bec31':
     resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-appload/tar.gz/1b52e49d881926135838cf6cfebdc1643a9bec31}
+    version: 0.1.0
+
+  '@CuriousCorrelation/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-relay/tar.gz/0147ac1bb29d3b88d6652432a482bd86f0174506':
+    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-relay/tar.gz/0147ac1bb29d3b88d6652432a482bd86f0174506}
     version: 0.1.0
 
   '@alloc/quick-lru@5.2.0':
@@ -2045,8 +2049,8 @@ packages:
   '@postlab/codemirror-input@0.0.8':
     resolution: {integrity: sha512-zuyNSM0BlAtUYOJB9Q5btksY+SMQHUQvFGI7TNkUg/6Vx1AHpVg+36Uqi8yb2tcPKkJk6jsqbhv3OK4e+Lg8/g==}
 
-  '@postlab/component-mqtt@0.0.19':
-    resolution: {integrity: sha512-UtvtQeh3oCaszcRR9OIDL86DJPuf9OpYh1I9EkfKVrin6U21bpfILlmyeVflSTEX2ta5UXLem+hP3guNZlM2Lg==}
+  '@postlab/component-mqtt@0.0.29':
+    resolution: {integrity: sha512-5rBjRdleIA/K/ea/Pk0Pk55uic32TEMHSp7IKQY29g0in4GlVlV3+Euh5vyJPbn7dmbtDgNw8uBOXQ8YDABdSg==}
 
   '@postlab/component-rest@0.0.3':
     resolution: {integrity: sha512-2I4/F489xpryStGGI073GK9bwFyefCof3QOXXGEehBxZb5AFinaLEq6vJhkmgFwAGjexOKVXwSc6jsMADJa2wg==}
@@ -2060,8 +2064,13 @@ packages:
   '@postlab/component-websocket@0.0.4':
     resolution: {integrity: sha512-6CIRUK/7bDSyOf5AqDSsNaTZFztADENrz1sCr1Oh73x2uaHfxcYBoi3ZQILhok1DMtXZaowHnuF2ny8DMMCJ1w==}
 
-  '@postlab/platform@0.0.16':
-    resolution: {integrity: sha512-3A6uFIilMLSeOmSj1NLY9InPy3HarpX6Rk+QaQPVtSMK4w039hY/NAl6awMKU8OfWu/UEvFsK2F35qBsqWxxbQ==}
+  '@postlab/platform@0.0.19':
+    resolution: {integrity: sha512-wFVHkuEDalADFRibjfv/BJaQuVonJTSLUCCPVUh9TjVfpoyd9zlnrpcBL9GyHUPneU4PPv9yaE3HZGIqS7UKKA==}
+    peerDependencies:
+      '@tauri-apps/api': ^2.6.0
+    peerDependenciesMeta:
+      '@tauri-apps/api':
+        optional: true
 
   '@postlab/types@0.0.1':
     resolution: {integrity: sha512-MEHh1ySpQoMUYjtPTe9lxZ/idPRMogIqfFQiV8/stecY5m0jCDp5efrAewzBT4GMJeoF8/sqmBMypSGPv3rN2Q==}
@@ -6910,6 +6919,10 @@ snapshots:
     dependencies:
       '@tauri-apps/api': 2.6.0
 
+  '@CuriousCorrelation/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-relay/tar.gz/0147ac1bb29d3b88d6652432a482bd86f0174506':
+    dependencies:
+      '@tauri-apps/api': 2.6.0
+
   '@alloc/quick-lru@5.2.0': {}
 
   '@ampproject/remapping@2.3.0':
@@ -8888,7 +8901,7 @@ snapshots:
       - '@lezer/common'
       - typescript
 
-  '@postlab/component-mqtt@0.0.19(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(vue@3.5.12(typescript@5.6.3))':
+  '@postlab/component-mqtt@0.0.29(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
       '@atlaskit/pragmatic-drag-and-drop-flourish': 2.0.3(react@18.3.1)
@@ -9422,28 +9435,33 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@postlab/platform@0.0.16(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
+  '@postlab/platform@0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
     dependencies:
       '@hoppscotch/plugin-appload': '@CuriousCorrelation/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-appload/tar.gz/1b52e49d881926135838cf6cfebdc1643a9bec31'
+      '@hoppscotch/plugin-relay': '@CuriousCorrelation/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-relay/tar.gz/0147ac1bb29d3b88d6652432a482bd86f0174506'
       '@hoppscotch/ui': 0.2.2(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
-      '@tauri-apps/api': 2.6.0
       '@tauri-apps/plugin-dialog': 2.3.1
       '@tauri-apps/plugin-fs': 2.4.1
       '@tauri-apps/plugin-shell': 2.3.0
+      '@tauri-apps/plugin-store': 2.3.0
       '@vueuse/core': 13.3.0(vue@3.5.12(typescript@5.6.3))
       ant-design-vue: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      aws4fetch: 1.0.20
       axios: 1.8.2
       fp-ts: 2.16.9
       lodash-es: 4.17.21
       mitt: 3.0.1
       parser-ts: 0.7.0(fp-ts@2.16.9)
       rxjs: 7.8.1
+      superjson: 2.2.2
       verzod: 0.2.4(zod@3.25.67)
       vue: 3.5.12(typescript@5.6.3)
       vue-i18n: 10.0.4(vue@3.5.12(typescript@5.6.3))
       workbox-window: 7.1.0
       xml-formatter: 3.6.3
       zod: 3.25.67
+    optionalDependencies:
+      '@tauri-apps/api': 2.6.0
     transitivePeerDependencies:
       - '@vue/composition-api'
       - debug
