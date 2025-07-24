@@ -3,12 +3,13 @@ import App from './App.vue'
 import ComponentRest from '@postlab/component-mqtt'
 import Antd, { message } from 'ant-design-vue'
 
+import { browserBaseIo } from '@postlab/platform/io/browser/_'
 import { disktopBaseIo } from '@postlab/platform/io/tauri/_'
 import { setPlatformDef } from '~/platform/index'
 import emitter from './event/bus'
 
 setPlatformDef({
-  io: disktopBaseIo,
+  io: browserBaseIo,
   mode: 'native',
 })
 
