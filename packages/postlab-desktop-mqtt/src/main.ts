@@ -9,7 +9,7 @@ import { setPlatformDef } from '~/platform/index'
 import emitter from './event/bus'
 
 setPlatformDef({
-  io: browserBaseIo,
+  io: disktopBaseIo,
   mode: 'native',
 })
 
