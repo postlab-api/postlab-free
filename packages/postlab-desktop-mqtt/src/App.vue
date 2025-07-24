@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import { theme, message } from 'ant-design-vue'
+import emitter from '@postlab/platform/event/bus'
 // @ts-ignore
 import { MqttModule } from '@postlab/component-mqtt'
 
-const [contextHolder] = message.useMessage()
+const [messageApi, contextHolder] = message.useMessage()
+
+emitter.on('messageApi', ({ t, m }) => {
+  if (t === 'info') messageApi.info(m)
+  else if (t === 'success') messageApi.success(m)
+  else if (t === 'error') messageApi.error(m)
+  else if (t === 'warning') messageApi.warning(m)
+})
 </script>
 
 <template>

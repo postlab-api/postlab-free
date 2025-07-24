@@ -1,15 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import ComponentRest from '@postlab/component-mqtt'
+import ComponentRest, { registerModule } from '@postlab/component-mqtt'
 import Antd, { message } from 'ant-design-vue'
 
 import { browserBaseIo } from '@postlab/platform/io/browser/_'
 import { disktopBaseIo } from '@postlab/platform/io/tauri/_'
 import { setPlatformDef } from '~/platform/index'
-import emitter from './event/bus'
+import emitter from '@postlab/platform/event/bus'
 
 setPlatformDef({
-  io: disktopBaseIo,
+  io: browserBaseIo,
   mode: 'native',
 })
 
@@ -22,5 +22,8 @@ emitter.emit('appMounted', app)
 
 app.use(ComponentRest)
 app.use(Antd)
+
+// 初始化
+registerModule(app)
 
 app.mount('#app')

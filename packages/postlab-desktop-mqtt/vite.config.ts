@@ -1,19 +1,17 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import * as path from 'path'
 
 const host = process.env.TAURI_DEV_HOST
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  plugins: [vue()],
+  plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
       // TODO: Maybe leave ~ only for individual apps and not use on common
       '~': path.resolve(__dirname, './src'),
-      stream: 'stream-browserify',
-      util: 'util',
-      querystring: 'qs',
     },
     dedupe: ['vue'],
   },
@@ -28,7 +26,7 @@ export default defineConfig(async () => ({
   clearScreen: false,
   // 2. tauri expects a fixed port, fail if that port is not available
   server: {
-    port: 1029,
+    port: 1420,
     strictPort: true,
     host: host || false,
     hmr: host
