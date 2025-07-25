@@ -13,8 +13,10 @@
     "@atlaskit/pragmatic-drag-and-drop": "1.7.4",
     "@atlaskit/pragmatic-drag-and-drop-flourish": "2.0.3",
     "@atlaskit/pragmatic-drag-and-drop-hitbox": "1.1.0",
+    "@postlab/codemirror-input": "0.0.11",
     "@postlab/component-websocket": "0.0.9",
     "@postlab/platform": "0.0.19",
+    "@postlab/types": "0.0.6",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "@vueuse/core": "10.5.0",
@@ -34,6 +36,7 @@
   "devDependencies": {
     "@tauri-apps/cli": "^2",
     "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "5.0.1",
     "typescript": "~5.6.2",
     "vite": "^6.0.3",
     "vue-tsc": "^2.1.10"

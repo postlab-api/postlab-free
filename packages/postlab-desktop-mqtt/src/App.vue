@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { theme, message } from 'ant-design-vue'
 import emitter from '@postlab/platform/event/bus'
-// @ts-ignore
 import { MqttModule } from '@postlab/component-mqtt'
 
 const [messageApi, contextHolder] = message.useMessage()

@@ -1,14 +1,19 @@
 <script setup lang="ts">
-import { ref, onBeforeMount } from 'vue'
 import { theme, message } from 'ant-design-vue'
+import emitter from '@postlab/platform/event/bus'
 import { SocketioModule } from '@postlab/component-socketio'
-import { invoke } from '@tauri-apps/api/core'
+// import { invoke } from '@tauri-apps/api/core'
 
 const [messageApi, contextHolder] = message.useMessage()
-const name = ref('')
 
-const handleUpdateModelValue = (v: string) => console.log('handleUpdateModelValue', v)
-const handleChangeKey = (v: string) => console.log('handleChangeKey', v)
+emitter.on('messageApi', ({ t, m }) => {
+  if (t === 'info') messageApi.info(m)
+  else if (t === 'success') messageApi.success(m)
+  else if (t === 'error') messageApi.error(m)
+  else if (t === 'warning') messageApi.warning(m)
+})
+// const handleUpdateModelValue = (v: string) => console.log('handleUpdateModelValue', v)
+// const handleChangeKey = (v: string) => console.log('handleChangeKey', v)
 </script>
 
 <template>

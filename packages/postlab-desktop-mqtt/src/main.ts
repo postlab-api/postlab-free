@@ -2,9 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import ComponentRest, { registerModule } from '@postlab/component-mqtt'
 import Antd, { message } from 'ant-design-vue'
-
 import emitter from '@postlab/platform/event/bus'
-
 import { initKernel } from '@postlab/platform/initialize/index'
 import { disktopIo } from '@postlab/platform/initialize/io/tauri/_'
 
