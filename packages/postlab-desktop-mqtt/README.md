@@ -11,3 +11,14 @@
 ## 在 tauri 中导入插件
 
 * https://github.com/tauri-apps/tauri/discussions/11411
+
+## 测试
+
+```
+pnpm tauri dev
+```
+
+## 异常
+启动异常错误 window Error: listen EACCES: permission denied
+
+* https://stackoverflow.com/questions/48478869/cannot-bind-to-some-ports-due-to-permission-denied

@@ -380,8 +380,11 @@ importers:
   packages/postlab-desktop-sse:
     dependencies:
       '@postlab/component-sse':
-        specifier: 0.0.2
-        version: 0.0.2(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
+        specifier: 0.0.6
+        version: 0.0.6(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(typescript@5.6.3)
+      '@postlab/platform':
+        specifier: 0.0.19
+        version: 0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
       '@tauri-apps/api':
         specifier: ^2
         version: 2.6.0
@@ -420,8 +423,11 @@ importers:
   packages/postlab-desktop-websocket:
     dependencies:
       '@postlab/component-websocket':
-        specifier: 0.0.4
-        version: 0.0.4(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
+        specifier: 0.0.8
+        version: 0.0.8(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
+      '@postlab/platform':
+        specifier: 0.0.19
+        version: 0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
       '@tauri-apps/api':
         specifier: ^2
         version: 2.6.0
@@ -2049,9 +2055,6 @@ packages:
   '@postlab/codemirror-input@0.0.12':
     resolution: {integrity: sha512-zcFyTM3h9kFFO4FOvX1eGUJTVkVQsY/TOfzJF5t9qY8sFiOw2Ju3P0MAvI6uWxa9RlMOdC4JhO1whAQzIcLVtQ==}
 
-  '@postlab/codemirror-input@0.0.7':
-    resolution: {integrity: sha512-SNphP0Cm0EQlVlPpLbPIGE4Hfs7wkK14GLFF3bZWz3FEZ3nzblG16uOK7TditlUGt1s+XZnoFN6LSA7aHxMWFg==}
-
   '@postlab/codemirror-input@0.0.8':
     resolution: {integrity: sha512-zuyNSM0BlAtUYOJB9Q5btksY+SMQHUQvFGI7TNkUg/6Vx1AHpVg+36Uqi8yb2tcPKkJk6jsqbhv3OK4e+Lg8/g==}
 
@@ -2064,11 +2067,11 @@ packages:
   '@postlab/component-socketio@0.0.5':
     resolution: {integrity: sha512-qboFuDDv9rfrGsZggAYelEKuKWlF/ZONgc0W36fsPqw7KdgBjBur1F1SBttQs5tMdcgynbMNE7OjdW5Fdro+VA==}
 
-  '@postlab/component-sse@0.0.2':
-    resolution: {integrity: sha512-2k4i2JkUaZYDotluXbyCNu/c84dVXXfXxCBa+Tr5UTRA+kSvfZzl7thevi9KNfiUAfg4NcNS1wUOwLA3sGVjNA==}
+  '@postlab/component-sse@0.0.6':
+    resolution: {integrity: sha512-ArdQwcHHjaKyz4htpknJTTfbhH9giSXMFQZlhs0/IJtRfrFG1N8aufwmHH7Zil8VQUOQxv0CFk/WH/TyoRGIxA==}
 
-  '@postlab/component-websocket@0.0.4':
-    resolution: {integrity: sha512-6CIRUK/7bDSyOf5AqDSsNaTZFztADENrz1sCr1Oh73x2uaHfxcYBoi3ZQILhok1DMtXZaowHnuF2ny8DMMCJ1w==}
+  '@postlab/component-websocket@0.0.8':
+    resolution: {integrity: sha512-ygFwP89WdJJ8kPMPk/zlh6moAgQSnCnFDdvR1smCsI6WGI9ZUr4aunfrUtmraJusKdevAkJIAtKdghFRDwLxhw==}
 
   '@postlab/platform@0.0.19':
     resolution: {integrity: sha512-wFVHkuEDalADFRibjfv/BJaQuVonJTSLUCCPVUh9TjVfpoyd9zlnrpcBL9GyHUPneU4PPv9yaE3HZGIqS7UKKA==}
@@ -8868,42 +8871,6 @@ snapshots:
       - '@lezer/common'
       - vue
 
-  '@postlab/codemirror-input@0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)':
-    dependencies:
-      '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
-      '@codemirror/commands': 6.8.1
-      '@codemirror/lang-javascript': 6.2.2
-      '@codemirror/lang-json': 6.0.1
-      '@codemirror/lang-xml': 6.1.0
-      '@codemirror/language': 6.10.1
-      '@codemirror/legacy-modes': 6.4.1
-      '@codemirror/lint': 6.8.2
-      '@codemirror/merge': 6.7.2
-      '@codemirror/search': 6.5.6
-      '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
-      '@lezer/highlight': 1.2.0
-      '@shopify/lang-jsonc': 1.0.0
-      '@tabler/icons-vue': 3.34.0(vue@3.5.12(typescript@5.6.3))
-      '@vueuse/core': 13.3.0(vue@3.5.12(typescript@5.6.3))
-      acorn-walk: 8.3.4
-      ant-design-vue: 4.2.6(vue@3.5.12(typescript@5.6.3))
-      buffer: 6.0.3
-      fp-ts: 2.16.9
-      jsonc-parser: 3.3.1
-      lodash-es: 4.17.21
-      normalize.css: 8.0.1
-      nprogress: 0.2.0
-      rxjs: 7.8.1
-      tern: 0.24.3
-      vue: 3.5.12(typescript@5.6.3)
-      vue-router: 4.4.5(vue@3.5.12(typescript@5.6.3))
-      workbox-window: 7.1.0
-      xml-formatter: 3.6.3
-    transitivePeerDependencies:
-      - '@lezer/common'
-      - typescript
-
   '@postlab/codemirror-input@0.0.8(@lezer/common@1.2.1)(typescript@4.9.5)':
     dependencies:
       '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
@@ -9236,7 +9203,7 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@postlab/component-sse@0.0.2(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
+  '@postlab/component-sse@0.0.6(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(typescript@5.6.3)':
     dependencies:
       '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
@@ -9254,20 +9221,14 @@ snapshots:
       '@codemirror/search': 6.5.6
       '@codemirror/state': 6.4.1
       '@codemirror/view': 6.25.1
-      '@dnd-kit/dom': 0.1.9
-      '@hoppscotch/httpsnippet': 3.0.7
-      '@hoppscotch/plugin-appload': '@CuriousCorrelation/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-appload/tar.gz/1b52e49d881926135838cf6cfebdc1643a9bec31'
-      '@hoppscotch/ui': 0.2.2(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
       '@lezer/highlight': 1.2.0
       '@noble/curves': 1.6.0
-      '@postlab/codemirror-input': 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
+      '@postlab/codemirror-input': 0.0.10(@lezer/common@1.2.1)(vue@3.5.12(typescript@5.6.3))
       '@scure/base': 1.1.9
       '@shopify/lang-jsonc': 1.0.0
       '@tabler/icons-vue': 3.34.0(vue@3.5.12(typescript@5.6.3))
       '@tauri-apps/plugin-store': 2.3.0
       '@types/hawk': 9.0.6
-      '@types/markdown-it': 14.1.2
-      '@unhead/vue': 1.11.10(vue@3.5.12(typescript@5.6.3))
       '@urql/core': 5.0.6(graphql@16.9.0)
       '@urql/devtools': 2.0.3(@urql/core@5.0.6(graphql@16.9.0))(graphql@16.9.0)
       '@urql/exchange-auth': 2.2.0(@urql/core@5.0.6(graphql@16.9.0))
@@ -9293,15 +9254,12 @@ snapshots:
       jsonpath-plus: 10.0.0
       lodash-es: 4.17.21
       lossless-json: 4.0.2
-      markdown-it: 14.1.0
       minisearch: 7.1.0
       mitt: 3.0.1
       normalize.css: 8.0.1
-      nprogress: 0.2.0
       paho-mqtt: 1.1.0
       parser-ts: 0.7.0(fp-ts@2.16.9)
       path: 0.12.7
-      postman-collection: 4.5.0
       process: 0.11.10
       qs: 6.13.0
       quicktype-core: 23.0.170
@@ -9310,18 +9268,12 @@ snapshots:
       rxjs: 7.8.1
       set-cookie-parser: 2.7.0
       set-cookie-parser-es: 1.0.5
-      socket.io-client-v2: socket.io-client@2.5.0
-      socket.io-client-v3: socket.io-client@3.1.3
-      socket.io-client-v4: socket.io-client@4.8.0
-      socketio-wildcard: 2.0.0
       splitpanes: 3.1.5
       stream-browserify: 3.0.0
       subscriptions-transport-ws: 0.11.0(graphql@16.9.0)
       superjson: 2.2.2
-      tern: 0.24.3
       timers: 0.1.1
       tiny-invariant: 1.3.3
-      tippy.js: 6.3.7
       tsyringe: 4.10.0
       url: 0.11.4
       util: 0.12.5
@@ -9329,10 +9281,6 @@ snapshots:
       verzod: 0.2.4(zod@3.25.67)
       vue: 3.5.12(typescript@5.6.3)
       vue-i18n: 10.0.4(vue@3.5.12(typescript@5.6.3))
-      vue-pdf-embed: 2.1.0(vue@3.5.12(typescript@5.6.3))
-      vue-router: 4.4.5(vue@3.5.12(typescript@5.6.3))
-      vue-tippy: 6.5.0(vue@3.5.12(typescript@5.6.3))
-      vuedraggable-es: 4.1.1(vue@3.5.12(typescript@5.6.3))
       wonka: 6.3.4
       workbox-window: 7.1.0
       xml-formatter: 3.6.3
@@ -9341,21 +9289,17 @@ snapshots:
     transitivePeerDependencies:
       - '@lezer/common'
       - '@types/react'
-      - '@vue/composition-api'
       - bufferutil
       - debug
       - encoding
-      - eslint
       - graphql
       - openapi-types
       - react
       - supports-color
-      - terser
       - typescript
       - utf-8-validate
-      - vite
 
-  '@postlab/component-websocket@0.0.4(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
+  '@postlab/component-websocket@0.0.8(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
     dependencies:
       '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
@@ -9379,7 +9323,7 @@ snapshots:
       '@hoppscotch/ui': 0.2.2(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))(vue@3.5.12(typescript@5.6.3))
       '@lezer/highlight': 1.2.0
       '@noble/curves': 1.6.0
-      '@postlab/codemirror-input': 0.0.7(@lezer/common@1.2.1)(typescript@5.6.3)
+      '@postlab/codemirror-input': 0.0.10(@lezer/common@1.2.1)(vue@3.5.12(typescript@5.6.3))
       '@scure/base': 1.1.9
       '@shopify/lang-jsonc': 1.0.0
       '@tabler/icons-vue': 3.34.0(vue@3.5.12(typescript@5.6.3))
