@@ -10,14 +10,26 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@postlab/component-socketio": "0.0.5",
+    "@atlaskit/pragmatic-drag-and-drop": "1.7.4",
+    "@atlaskit/pragmatic-drag-and-drop-flourish": "2.0.3",
+    "@atlaskit/pragmatic-drag-and-drop-hitbox": "1.1.0",
+    "@postlab/component-socketio": "0.0.7",
     "@postlab/platform": "0.0.19",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
+    "@vueuse/core": "10.5.0",
     "ant-design-vue": "4.2.6",
+    "dayjs": "1.11.13",
+    "fp-ts": "2.16.1",
+    "lodash-es": "4.17.21",
+    "mitt": "3.0.1",
+    "normalize.css": "8.0.1",
     "reflect-metadata": "0.2.2",
+    "splitpanes": "4.0.4",
     "tsyringe": "4.10.0",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-i18n": "11.1.11",
+    "zod": "3.25.67"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2",

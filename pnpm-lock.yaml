@@ -337,8 +337,8 @@ importers:
   packages/postlab-desktop-socketio:
     dependencies:
       '@postlab/component-socketio':
-        specifier: 0.0.5
-        version: 0.0.5(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
+        specifier: 0.0.7
+        version: 0.0.7(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
       '@postlab/platform':
         specifier: 0.0.19
         version: 0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
@@ -379,9 +379,18 @@ importers:
 
   packages/postlab-desktop-sse:
     dependencies:
+      '@atlaskit/pragmatic-drag-and-drop':
+        specifier: 1.7.4
+        version: 1.7.4
+      '@atlaskit/pragmatic-drag-and-drop-flourish':
+        specifier: 2.0.3
+        version: 2.0.3(react@18.3.1)
+      '@atlaskit/pragmatic-drag-and-drop-hitbox':
+        specifier: 1.1.0
+        version: 1.1.0
       '@postlab/component-sse':
-        specifier: 0.0.6
-        version: 0.0.6(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(typescript@5.6.3)
+        specifier: 0.0.7
+        version: 0.0.7(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(typescript@5.6.3)
       '@postlab/platform':
         specifier: 0.0.19
         version: 0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
@@ -391,18 +400,45 @@ importers:
       '@tauri-apps/plugin-opener':
         specifier: ^2
         version: 2.4.0
+      '@vueuse/core':
+        specifier: 10.5.0
+        version: 10.5.0(vue@3.5.12(typescript@5.6.3))
       ant-design-vue:
         specifier: 4.2.6
         version: 4.2.6(vue@3.5.12(typescript@5.6.3))
+      dayjs:
+        specifier: 1.11.13
+        version: 1.11.13
+      fp-ts:
+        specifier: 2.16.1
+        version: 2.16.1
+      lodash-es:
+        specifier: 4.17.21
+        version: 4.17.21
+      mitt:
+        specifier: 3.0.1
+        version: 3.0.1
+      normalize.css:
+        specifier: 8.0.1
+        version: 8.0.1
       reflect-metadata:
         specifier: 0.2.2
         version: 0.2.2
+      splitpanes:
+        specifier: 4.0.4
+        version: 4.0.4(vue@3.5.12(typescript@5.6.3))
       tsyringe:
         specifier: 4.10.0
         version: 4.10.0
       vue:
         specifier: 3.5.12
         version: 3.5.12(typescript@5.6.3)
+      vue-i18n:
+        specifier: 11.1.11
+        version: 11.1.11(vue@3.5.12(typescript@5.6.3))
+      zod:
+        specifier: 3.25.67
+        version: 3.25.67
     devDependencies:
       '@tauri-apps/cli':
         specifier: ^2
@@ -423,8 +459,8 @@ importers:
   packages/postlab-desktop-websocket:
     dependencies:
       '@postlab/component-websocket':
-        specifier: 0.0.8
-        version: 0.0.8(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
+        specifier: 0.0.9
+        version: 0.0.9(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
       '@postlab/platform':
         specifier: 0.0.19
         version: 0.0.19(@tauri-apps/api@2.6.0)(eslint@9.12.0(jiti@2.4.2))(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))
@@ -2064,14 +2100,14 @@ packages:
   '@postlab/component-rest@0.0.3':
     resolution: {integrity: sha512-2I4/F489xpryStGGI073GK9bwFyefCof3QOXXGEehBxZb5AFinaLEq6vJhkmgFwAGjexOKVXwSc6jsMADJa2wg==}
 
-  '@postlab/component-socketio@0.0.5':
-    resolution: {integrity: sha512-qboFuDDv9rfrGsZggAYelEKuKWlF/ZONgc0W36fsPqw7KdgBjBur1F1SBttQs5tMdcgynbMNE7OjdW5Fdro+VA==}
+  '@postlab/component-socketio@0.0.7':
+    resolution: {integrity: sha512-XBMdGj6i/Eci7X117ExLR8NGapfBRcRX2yFExR2mxDtglgfEhKoY+qLxVMf/pe4LFGWrAypKLP9tNnT/FXk8jA==}
 
-  '@postlab/component-sse@0.0.6':
-    resolution: {integrity: sha512-ArdQwcHHjaKyz4htpknJTTfbhH9giSXMFQZlhs0/IJtRfrFG1N8aufwmHH7Zil8VQUOQxv0CFk/WH/TyoRGIxA==}
+  '@postlab/component-sse@0.0.7':
+    resolution: {integrity: sha512-73u2VND3s916sjOlthSBw2SoIb9UfBAtIZkHrOX2cgyxG33K6ACEOrTC18qzsqwTCNYarDj/m/PKQZ15hJxlkw==}
 
-  '@postlab/component-websocket@0.0.8':
-    resolution: {integrity: sha512-ygFwP89WdJJ8kPMPk/zlh6moAgQSnCnFDdvR1smCsI6WGI9ZUr4aunfrUtmraJusKdevAkJIAtKdghFRDwLxhw==}
+  '@postlab/component-websocket@0.0.9':
+    resolution: {integrity: sha512-vhLTTYWoANKXdFIwWtKc5GiDBKSxMZ4h18u9yertJ5vUiI0AJT67imCcac0LFb9/V+5c/7e7XF81YpaH3ctQlA==}
 
   '@postlab/platform@0.0.19':
     resolution: {integrity: sha512-wFVHkuEDalADFRibjfv/BJaQuVonJTSLUCCPVUh9TjVfpoyd9zlnrpcBL9GyHUPneU4PPv9yaE3HZGIqS7UKKA==}
@@ -8452,7 +8488,7 @@ snapshots:
   '@intlify/bundle-utils@10.0.1(vue-i18n@11.1.11(vue@3.5.12(typescript@4.9.5)))':
     dependencies:
       '@intlify/message-compiler': 11.1.3
-      '@intlify/shared': 11.1.3
+      '@intlify/shared': 11.1.11
       acorn: 8.14.1
       escodegen: 2.1.0
       estree-walker: 2.0.2
@@ -9084,7 +9120,7 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@postlab/component-socketio@0.0.5(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
+  '@postlab/component-socketio@0.0.7(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
     dependencies:
       '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
@@ -9203,7 +9239,7 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@postlab/component-sse@0.0.6(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(typescript@5.6.3)':
+  '@postlab/component-sse@0.0.7(@lezer/common@1.2.1)(graphql@16.9.0)(openapi-types@1.3.5)(react@18.3.1)(typescript@5.6.3)':
     dependencies:
       '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
@@ -9299,7 +9335,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@postlab/component-websocket@0.0.8(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
+  '@postlab/component-websocket@0.0.9(@lezer/common@1.2.1)(eslint@9.12.0(jiti@2.4.2))(graphql@16.9.0)(openapi-types@1.3.5)(terser@5.43.1)(typescript@5.6.3)(vite@6.3.4(@types/node@22.9.3)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.87.0)(terser@5.43.1)(yaml@2.7.1))':
     dependencies:
       '@apidevtools/swagger-parser': 10.1.1(openapi-types@1.3.5)
       '@atlaskit/pragmatic-drag-and-drop': 1.7.4
