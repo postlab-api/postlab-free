@@ -10,7 +10,8 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@postlab/component-sse": "0.0.2",
+    "@postlab/component-sse": "0.0.6",
+    "@postlab/platform": "0.0.19",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "ant-design-vue": "4.2.6",
